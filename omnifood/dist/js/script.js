@@ -60,7 +60,7 @@ const testimonials=[
   {   
       id:"4",
       img:"./img/customers/hannah.jpg",
-      name:"Hannah Smith",
+      name:"Hannah Smitg",
       desc:"I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.",
   },
 ];
