@@ -5,7 +5,17 @@ const url='./api/people.json';
 btn.addEventListener('click',()=>{
     fetchDataAsync(url);
 });
+
 const fetchDataAsync=async(url)=>{
+
+    try{
+    const response =await fetch(url);
+    const data=await response.json();
+    console.log('data',data)
+    displayitems(data);
+    }catch(err){
+
+    }
     const response =await fetch(url);
     const data=await response.json();
     console.log('data',data)
