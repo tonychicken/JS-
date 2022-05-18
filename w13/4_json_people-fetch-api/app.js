@@ -3,8 +3,34 @@ const btn=document.querySelector('.btn');
 const url='./api/people.json';
 
 btn.addEventListener('click',()=>{
-    getData(url);
+    fetchData(url);
 });
+
+function fetchData(url){
+    // const response = fetch(url).then().catch();
+    // console.log('response',response);
+    
+    fetch(url)
+    .then((response)=>response.json())
+    .then((data)=>{
+        console.log('data',data)
+        displayitems(data);
+        })
+        .catch((err)=>console.log('error',err));
+}
+
+const displayitems=(items)=>{
+    const displayData=items
+        .map((item)=>{
+            return `<p>${item.name}</p>`
+        })
+        .join('');
+        console.log('displayData',displayData);
+        const element=document.createElement('div');
+        element.innerHTML=displayData;
+        document.body.appendChild(element);
+}
+
 
 function getData(url){
     const xhr =new XMLHttpRequest();
