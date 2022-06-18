@@ -1,4 +1,6 @@
 import get from './getElement.js';
+import { hideLoading } from './toggleLoading_06.js';
+
 
 const displayDrinks = async ({ drinks }) => {
     console.log('drink', drinks);
@@ -7,6 +9,7 @@ const displayDrinks = async ({ drinks }) => {
     // console.log(title);
 
     if (!drinks) {
+        hideLoading();
         title.textContent = 'Sorry,No drinks matched your search';
         section.innerHTML = null;
         return;
