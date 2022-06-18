@@ -18,7 +18,7 @@ const displayDrinks = async ({ drinks }) => {
         const { idDrink: id, strDrink: name, strDrinkThumb: image } = drink;
         return `     
             <a href="drink_06.html">
-            <article class="cocktail" data-id="${id}}">
+            <article class="cocktail" data-id="${id}">
             <img src="${image}" alt="cocktail">
             <h3>${name}</h3>
             </article>
