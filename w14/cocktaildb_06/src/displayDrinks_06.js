@@ -25,6 +25,7 @@ const displayDrinks = async ({ drinks }) => {
             </a>
             `
     }).join('');//JOIN不要陣列，要字串
+    hideLoading();
     title.textContent = '';
     section.innerHTML =newDrinks;//從API動態產生圖片
 
