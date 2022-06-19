@@ -1,5 +1,5 @@
-import get from "../../../w15/cocktaildb_06/src/getElement.js";
-import { hideLoading } from "../src/toggleLoading_06.js";
+import get from "./getElement.js";
+import { hideLoading } from "./toggleLoading_06.js";
 
 const displaySingleDrink_06 = async ({drinks})=>{
     console.log('display drink',drinks[0]);
