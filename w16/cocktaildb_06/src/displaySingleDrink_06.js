@@ -6,7 +6,6 @@ const displaySingleDrink_06 = async ({drinks})=>{
     hideLoading();
     const drink =drinks[0];
     const{strDrinkThumb:image,strDrink:name,strInstructions:desc}=drink;
-
     const list=[
         drink.strIngredient1,
         drink.strIngredient2,
@@ -27,7 +26,5 @@ const displaySingleDrink_06 = async ({drinks})=>{
             return `<li> <i class="far fa-check-square"></i>${item}</li>`;
     })
     .join('');
-
 }
-
 export default displaySingleDrink_06;
