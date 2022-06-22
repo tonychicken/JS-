@@ -7,15 +7,36 @@
   <title>Cocktails</title>
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
   <!-- css -->
   <link rel="stylesheet" href="./styles_06.css" />
+
 </head>
 
 <body>
   <div class="search-form">
     <h2>動物認領養系統 API</h2>
-    <input type="text" placeholder="Serch Your Favorite Cocktail" name="Animal" />
+    <input type="text" placeholder="請輸入單頁顯示數量" name="Animal" />
   </div>
+  <div class="search-form">
+    <h2><span>請輸入查詢條件</span></h2>
+            
+              <ul class="query">
+                    <li ><label><span>動物品種</span>
+                    <select id="animal-change" name="select"><option value="https://www.youtube.com/watch?v=BRcXi7eZDMQ">狗</option><option value="">貓</option><option value="">寵物鼠</option><option value="">寵物兔</option></select></label>
+                  </li>
+                    <li class="place"><label><span>收容所</span><select id="ddlShelter"><option value="">- 收容所 -</option><option value="AAAAG">新北市政府動物保護防疫處</option><option value="AAACG">新北市新店區公立動物之家</option><option value="AAADG">新北市板橋區公立動物之家</option><option value="AAAEG">新北市中和區公立動物之家</option><option value="AAAFG">新北市淡水區公立動物之家</option><option value="AAAGG">新北市瑞芳區公立動物之家</option><option value="AAAHG">新北市五股區公立動物之家</option><option value="AAAIG">新北市八里區公立動物之家</option><option value="AAAJG">新北市三芝區公立動物之家</option><option value="BAAAG">宜蘭縣流浪動物中途之家</option><option value="CAAAG">桃園市動物保護教育園區</option><option value="DAAAG">新竹縣公立動物收容所</option><option value="EAAAG">苗栗縣生態保育教育中心(動物收容所)</option><option value="FAAAG">臺中市動物之家南屯園區</option><option value="FAABG">臺中市動物之家后里園區</option><option value="GAAAG">彰化縣流浪狗中途之家</option><option value="HAAAG">南投縣公立動物收容所</option><option value="IAAAG">雲林縣流浪動物收容所</option><option value="JAAAG">嘉義縣流浪犬中途之家</option><option value="LAAAG">高雄市壽山動物保護教育園區</option><option value="LAABG">高雄市燕巢動物保護關愛園區</option><option value="MAAAG">屏東縣公立犬貓中途之家</option><option value="NAAAG">臺東縣動物收容中心</option><option value="OAAAG">花蓮縣狗貓躍動園區</option><option value="PAAAG">澎湖縣流浪動物收容中心</option><option value="QAAAG">基隆市寵物銀行</option><option value="RAAAG">新竹市動物保護教育園區</option><option value="TAAAG">嘉義市動物保護教育園區</option><option value="UAAAG">臺南市動物之家灣裡站</option><option value="UAABG">臺南市動物之家善化站</option><option value="VAAAG">臺北市動物之家</option><option value="XAAAG">連江縣流浪犬收容中心</option><option value="YAAAG">金門縣動物收容中心</option></select></label></li>
+                    <li class="inLeft"><label><span>收容編號</span><input id="txtAcceptNum" type="text" placeholder="收容編號"></label></li>
+                    <li class="inRight"><label><span>動物晶片號碼</span><input id="txtChipID" type="text" placeholder="動物晶片號碼"></label></li>
+                </ul>
+                <div class="clearFloat"></div>
+                <div class="queryOption">
+                  <button id="Cancel" type="button"><span>取消</span></button>
+                    <button id="Search" type="button"><span>查詢</span></button>
+                </div>
+            
+        </div>
+
   <section class="section cocktails">
     <article class="loading">
       <img src="./loading.gif" alt="loading">
